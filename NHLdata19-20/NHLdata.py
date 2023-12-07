@@ -1,14 +1,10 @@
-# tee ratkaisusi tänne
 import json
-
-
 
 def haePelaaja(kohteet):
     haettava = input("nimi: ").lower()
     for kohde in kohteet:
         if kohde["name"].lower() == haettava:
             return kohde
-
 
 
 def listaaJoukkueet(kohteet, valinta):
@@ -23,7 +19,6 @@ def listaaJoukkueet(kohteet, valinta):
     lista.sort()    
     for asia in lista:
         print(asia)
-
 
 
 def joukkueenPelaajat(kohteet, valinta):
@@ -63,7 +58,6 @@ def tulostus(asia):
 
 
 
-
 def main():
     kohde = "kaikki.json"
     with open(kohde) as tiedosto:
@@ -95,9 +89,6 @@ def main():
                 enitenMaaleja(kohteet)
         except ValueError:
             print("Virheellinen syöte.")
-
-
-
 
 
 main()
