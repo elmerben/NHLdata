@@ -1,4 +1,7 @@
+# tee ratkaisusi tänne
 import json
+
+
 
 def haePelaaja(kohteet):
     haettava = input("nimi: ").lower()
